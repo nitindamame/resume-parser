@@ -16,7 +16,6 @@ api_key = os.getenv("GOOGLE_API_KEY")
 
 llm_config = {"config_list": [{'model': 'gemini-1.5-flash', 'api_key': {api_key}, 'api_type': 'google'}]}
 
-resume_agent = ResumeAnalysisAgent("resume_agent", llm_config=llm_config)
 
 def extract_json(input_string):
     json_match = re.search(r'\{.*\}', input_string, re.DOTALL)
