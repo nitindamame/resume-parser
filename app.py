@@ -8,9 +8,6 @@ import google.generativeai as genai
 import pandas as pd
 import json
 import re
-import autogen 
-from autogen import AssistantAgent, UserProxyAgent, config_list_from_json
-from agent import ResumeAnalysisAgent
 import pypdf
 
 
