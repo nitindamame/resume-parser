@@ -1,0 +1,17 @@
+streamlit
+transformers
+torch
+pdfplumber
+nltk
+scipy==1.12
+gensim
+scikit-learn
+pypdf
+google.generativeai
+python-dotenv
+jsons
+pdf2image
+autogen
+google-generativeai
+vertexai
+linkedin_api 
