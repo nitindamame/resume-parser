@@ -73,8 +73,8 @@ def input_pdf_text(uploaded_files):
         text += str(page.extract_text())
     return text
 
-st.set_page_config(page_title="ATS Resume EXpert")
-st.header("ATS Tracking System")
+st.set_page_config(page_title="Resume Screening System")
+st.header("Resume Screening System")
 input_text=st.text_area("Job Description: ",key="input")
 uploaded_files=st.file_uploader("Upload your resume(PDF)...",type=["pdf"],accept_multiple_files=True)
 
@@ -126,47 +126,4 @@ if st.button("Percentage match"):
     else:
         
         st.write("Please uplaod the resume")
-
-# title = st.text_area("Job Title: ",key="input tile")
-# location = st.text_area("location: ",key="input location")
-# additional_keywords = st.text_area("keywords: ",key="input keywords")
-
-# if st.button("Search Profiles"):
-#     job_title = title
-#     location = location
-#     additional_keywords = additional_keywords
-
-#     keywords = f"{job_title} {location} {additional_keywords}"
-#     # Perform the search
-#     results = api.search_people(
-#     keywords=keywords,
-#     include_private_profiles=True,
-#     limit=10  # arbitrary limit to stop test taking too long
-#     )
-
-#     print(results)
-#     people_list=[]
-#     for person in results:
-#         name = person.get('name')
-#         location = person.get('location')
-#         jobtitle = person.get('jobtitle')
-#         urn_id = person.get('urn_id')
-#         distance = person.get('distance')
-#         linkedin_id = "https://www.linkedin.com/in/" + urn_id
-    
-
-#         people_list.append([name, location,jobtitle, linkedin_id])
-        
-#         # st.write(f"Name: {name}")
-#         # st.write(f"Location: {location}")
-#         # st.write(f"Job Title: {jobtitle}")
-#         # st.write(f"URN ID: https://www.linkedin.com/in/{urn_id}")
-#         # st.write(f"Distance: {distance}")
-#         # st.write('-' * 20)
-    
-#     #st.write("Search Completed")
-#     st.subheader("List of relevant people")
-#     df = pd.DataFrame(people_list, columns=["Name", "Location","Job Title", "LinkedIn Profile"])  
-#     st.write(df) 
-
 
